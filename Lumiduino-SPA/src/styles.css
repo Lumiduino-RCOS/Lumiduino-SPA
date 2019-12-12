@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { 
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+}
+
+a{
+    color: #007bff;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+    background-color: transparent;
+}
+
+a:hover{
+    color: white;
+    text-decoration: none;
+}
