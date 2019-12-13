@@ -1,1 +1,33 @@
-<p>device works!</p>
+<div id="device_jumbo" class="jumbotron text-center">
+    <div class="container">
+        <h1 class="jumbotron-heading">Devices</h1>
+        <p class="lead text-muted">View all network connected lighting devices here</p>
+        <p>
+            <button class="btn btn-primary my-2" (click)="refreshDevices()">Refresh Devices</button>
+        </p>
+    </div>
+</div>
+
+<div class='py-5 bg-light'>
+    <div class='container'>
+        <div class="row">
+            <div class="col-md-4" *ngFor="let device of device_locations">
+                <div class="card mb-4 box-shadow">
+                    <div class="card-header">
+                        <span class="text-primary">Device ID: </span> 
+                        <span class="text-secondary">{{device[0]}}</span>
+                    </div>
+                    <div class="card-body">
+                        <p class="text-info">Address:
+                            <span class="text-muted">{{device[1]}}</span>
+                        </p>
+                        <p class="text-info">Port:
+                            <span class="text-muted">{{device[2]}}</span>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+.head-block{
+    background-image: url(../../../assets/trianglify-lowres.png);
+    background-position: center center;
+    background-size: cover;
+    color: black;
+}
+
+.btn-secondary{
+    color: black;
+}

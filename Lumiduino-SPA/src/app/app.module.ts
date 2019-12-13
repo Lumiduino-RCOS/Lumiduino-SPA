@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, APP_INITIALIZER } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +10,10 @@ import { MatMenuModule } from '@angular/material/menu';
 import {MaterialModule} from "./material/material.module";
 import { HomeComponent } from './views/home/home.component';
 import { DeviceComponent } from './views/device/device.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { map, catchError } from 'rxjs/operators';
+import {Observable, ObservableInput, of} from 'rxjs';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,8 +25,8 @@ import { DeviceComponent } from './views/device/device.component';
     MaterialModule,
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
-
+    BrowserAnimationsModule,
+    HttpClientModule
     /*MatToolbarModule,
     MatMenuModule*/
   ],
