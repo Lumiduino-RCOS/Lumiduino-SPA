@@ -13,13 +13,15 @@ import { DeviceComponent } from './views/device/device.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { map, catchError } from 'rxjs/operators';
 import {Observable, ObservableInput, of} from 'rxjs';
+import { SingledeviceComponent } from './views/singledevice/singledevice.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    DeviceComponent
+    DeviceComponent,
+    SingledeviceComponent
   ],
   imports: [
     MaterialModule,
