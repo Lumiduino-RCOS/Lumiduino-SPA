@@ -1,1 +1,16 @@
-<p>singledevice works!</p>
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="display-3">Device {{device.id}}</h1>
+        <p>Control your arduino network components here</p>
+    </div>
+</div>
+<div class="container">
+    <div class="my-3 p-3 bg-white rounded box-shadow" id="control-container">
+        <h6 class="border-bottom broder-grey pb-2 mb-0">Sensor Readings</h6>
+        <p class="text-muted pt-3" *ngIf="device == null || device.sensors.length < 1"> no sensor data found</p>
+    </div>
+    <div class="my-3 p-3 bg-white rounded box-shadow" id="control-container">
+        <h6 class="border-bottom broder-grey pb-2 mb-0">Control Center</h6>
+        <p class="text-muted pt-3" *ngIf="device == null || device.function.length < 1">no control functions found</p>
+    </div>
+</div>

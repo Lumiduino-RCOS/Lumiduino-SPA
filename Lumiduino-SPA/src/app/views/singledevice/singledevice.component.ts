@@ -10,6 +10,7 @@ import {DeviceapiService} from '../../services/deviceapi.service';
 export class SingledeviceComponent implements OnInit {
   private device_id: string;
   private device_functions: Array<string>;
+  private device: any = null;
 
   constructor(private router: Router,
     private activeRoute: ActivatedRoute,
